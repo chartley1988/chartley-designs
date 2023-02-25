@@ -6,7 +6,7 @@ const andada = Andada_Pro({
 	subsets: ['latin'],
 });
 const tangerine = Tangerine({
-	weight: '700',
+	weight: '400',
 	subsets: ['latin'],
 });
 
