@@ -2,17 +2,16 @@
     position: relative;
     background-color:var(--color-background-accent);
     color: var(--color-accent-light);
-    padding: 1rem;
     z-index: 3;
     width: 100%;
 
-    font-family: 'Tangerine', cursive;
+    font-family: 'Tangerine';
     font-weight: 400;
     text-align: center;
     user-select: none;
 }
 
-.container > .social-bar {
+.social {
     position: absolute;
     right: 10px;
     top: 0px;
@@ -24,25 +23,25 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .container {
-        padding-top: 4rem;
-
+    .container > h1 {
+        font-size: 3rem;
+        text-align: left;
+        text-shadow: 2px 3px 0px rgb(0, 0, 0);
     }
 }
 
-@media only screen and (max-width: 828px) {
+@media only screen and (max-width: 768px) {
     .container {
         font-size: 2rem;
-        padding: 1rem;
 
     }
 
     .container > h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-shadow: 2px 3px 0px rgb(0, 0, 0);
     }
 
-    .container > .social-bar {
+    .container > .social{
         visibility: hidden;
     
     }

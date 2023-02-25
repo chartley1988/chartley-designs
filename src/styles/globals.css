@@ -63,9 +63,7 @@ li {
 }
 
 @media only screen and (max-width: 828px) {
-	main {
-		padding: 1rem 0.5rem 1.5rem 0.5rem;
-	}
+
 
 	.main-container {
 		width: 95%;

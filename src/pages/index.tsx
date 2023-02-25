@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/home.module.css';
 import Projects from '../components/projects';
-import NavMenu from '../components/nav_menu';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
@@ -21,7 +20,6 @@ export default function Home() {
 			</Head>
 			<main className={styles.container}>
 				<Header />
-				<NavMenu />
 				<Projects />
 				<Footer />
 			</main>
