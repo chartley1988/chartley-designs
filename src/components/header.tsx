@@ -1,12 +1,13 @@
-import React from "react";
-import SocialBar from "./social_bar";
-import "./header.css"
+import SocialBar from './social_bar';
+import styles from '../styles/header.module.css';
 
-function Header () {
-    return <div id="header-container">
-        <h1>Chartley Designs</h1>
-        <SocialBar />
-    </div>
-};
+function Header() {
+	return (
+		<div className={styles.container}>
+			<h1>Chartley Designs</h1>
+			<SocialBar />
+		</div>
+	);
+}
 
-export default Header
+export default Header;

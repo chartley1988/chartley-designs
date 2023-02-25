@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import styles from '@/styles/home.module.css';
-import Projects from '@/components/projects';
 import NavMenu from '@/components/nav_menu';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import Blog from '@/components/page_content/blog';
 
 export default function Home() {
 	return (
@@ -22,7 +22,7 @@ export default function Home() {
 			<main className={styles.container}>
 				<Header />
 				<NavMenu />
-				<Projects />
+				<Blog />
 				<Footer />
 			</main>
 		</>

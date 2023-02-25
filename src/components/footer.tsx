@@ -1,12 +1,13 @@
-import React from "react";
-import "./footer.css"
-import SocialBar from "./social_bar";
+import  styles from '../styles/footer.module.css';
+import SocialBar from './social_bar';
 
-function Footer () {
-    return <div id="footer-container">
-        <SocialBar />
-        <p>Carson Hartley © 2023</p>
-    </div>
-};
+function Footer() {
+	return (
+		<div className={styles.container}>
+			<SocialBar />
+			<p>Carson Hartley © 2023</p>
+		</div>
+	);
+}
 
-export default Footer
+export default Footer;

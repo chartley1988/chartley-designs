@@ -1,11 +1,8 @@
-import './social_bar.css';
-import twitterLogo from '../../images/Twitter social icons - circle - blue.svg';
-import instaLogo from '../..//images/Instagram_Glyph_Gradient_RGB.svg';
-import githubLogoWhite from '../..//images/github-mark-white.svg';
+import styles from '../styles/social_bar.module.css';
 
 function SocialBar() {
 	return (
-		<div className='social-bar'>
+		<div className={styles.container}>
 			<a href='mailto:chartley1988@gmail.com'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -18,16 +15,17 @@ function SocialBar() {
 				</svg>
 			</a>
 
-            <a href='https://github.com/chartley1988'><img src={githubLogoWhite} alt="Github Logo"></img></a>
+			<a href='https://github.com/chartley1988'>
+				<img src='/icons/github-mark-white.svg' alt='Github Logo'></img>
+			</a>
 
 			<a href='https://twitter.com/chartley1988'>
-				<img src={twitterLogo} alt='Twitter Logo'></img>
+				<img src='icons/twitter_blue.svg' alt='Twitter Logo'></img>
 			</a>
 
 			<a href='https://www.instagram.com/chartley1988/'>
-				<img src={instaLogo} alt='Instagram Logo'></img>
+				<img src='/icons/instagram_gradient.svg' alt='Instagram Logo'></img>
 			</a>
-
 		</div>
 	);
 }
