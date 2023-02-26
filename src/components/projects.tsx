@@ -34,8 +34,12 @@ const listProjects = projectArray.map((project: any) => (
 			<Image
 				src={project.image_src}
 				alt='Project Screenshot'
-				width={400}
-				height={400}
+				width={1440}
+				height={900}
+				style={{
+					width: '100%',
+					height: 'auto',
+				}}
 			/>
 		</div>
 		<a href={project.live_url}>Check it out!</a>
