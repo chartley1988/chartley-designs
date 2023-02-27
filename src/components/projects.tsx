@@ -15,21 +15,21 @@ const iterate = (obj: any) => {
 const projectArray = iterate(projects_data);
 
 const listProjects = projectArray.map((project: any) => (
-	<li className='project main-container' key={project.key_value}>
-		<div className='project-header'>
+	<li className={`${styles.project} main-container`} key={project.key_value}>
+		<div className={styles.header}>
 			<h3>{project.title}</h3>
 			<div>
 				<a href={project.github_url}>
 					<Image
-						src='/icons/github-mark-white.svg'
+						src="/icons/github-mark.svg"
 						alt='GitHub Logo'
 						width={32}
 						height={32}
+						color="var(--font)"
 					/>
 				</a>
 			</div>
 		</div>
-		<div className='content-wrapper'>
 			<p>{project.description}</p>
 			<Image
 				src={project.image_src}
@@ -41,7 +41,6 @@ const listProjects = projectArray.map((project: any) => (
 					height: 'auto',
 				}}
 			/>
-		</div>
 		<a href={project.live_url}>Check it out!</a>
 	</li>
 ));
