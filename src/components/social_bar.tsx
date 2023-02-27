@@ -1,4 +1,5 @@
 import styles from '../styles/social_bar.module.css';
+import Image from 'next/image';
 
 function SocialBar() {
 	return (
@@ -16,15 +17,30 @@ function SocialBar() {
 			</a>
 
 			<a href='https://github.com/chartley1988'>
-				<img src='/icons/github-mark-white.svg' alt='Github Logo'></img>
+				<Image
+					src='/icons/github-mark-white.svg'
+					alt='Github Logo'
+					width={32}
+					height={32}
+				></Image>
 			</a>
 
 			<a href='https://twitter.com/chartley1988'>
-				<img src='icons/twitter_blue.svg' alt='Twitter Logo'></img>
+				<Image
+					src='icons/twitter_blue.svg'
+					alt='Twitter Logo'
+					width={32}
+					height={32}
+				></Image>
 			</a>
 
 			<a href='https://www.instagram.com/chartley1988/'>
-				<img src='/icons/instagram_gradient.svg' alt='Instagram Logo'></img>
+				<Image
+					src='/icons/instagram_gradient.svg'
+					alt='Instagram Logo'
+					width={32}
+					height={32}
+				></Image>
 			</a>
 		</div>
 	);
