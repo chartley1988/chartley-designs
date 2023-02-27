@@ -1,4 +1,4 @@
-import styles from '@/styles/blog.module.css';
+import styles from '../../styles/blog.module.css'
 import PostListing from '@/components/blog_entry';
 
 
