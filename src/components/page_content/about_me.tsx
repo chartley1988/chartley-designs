@@ -17,7 +17,7 @@ function AboutMe() {
 						My current focus is learning web development,
 						specifically front-end. My main area of focus is working
 						with React, with an emphasis on designs that feel good
-						to use and look the part.
+						to use and look the part. Check out the main page for some examples of stuff I've been working on!
 					</p>
 				</section>
 				<Image
