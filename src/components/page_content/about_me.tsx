@@ -1,4 +1,4 @@
-import styles from '../../styles/about_me.module.css';
+import styles from '@/styles/about_me.module.css';
 import Image from 'next/image';
 
 function AboutMe() {
