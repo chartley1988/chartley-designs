@@ -46,7 +46,6 @@ export default function BlogPage({
 
 export async function getStaticProps() {
 	const data: blogData[] = await getBlogData();
-	console.log(data);
 
 	return {
 		props: {
