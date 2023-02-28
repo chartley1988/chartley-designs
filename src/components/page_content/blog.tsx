@@ -2,13 +2,13 @@ import styles from '../../styles/blog.module.css'
 import PostListing from '@/components/blog_entry';
 
 
-function Blog() {
-	const blogPosts: any = []
 
+
+export default function Blog( {data}: any ) {
 	return (
 		<ul className={styles.blog}>
-			{blogPosts &&
-				blogPosts.map((post: any, index: number) => (
+			{data &&
+				data.map((post: any, index: number) => (
 					<PostListing
 						title={post.title}
 						post_date={post.date_posted.split('T')[0]}
@@ -21,4 +21,5 @@ function Blog() {
 	);
 }
 
-export default Blog;
+
+
