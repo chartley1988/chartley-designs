@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import styles from '../../styles/home.module.css';
+import blog_styles from '../../styles/post_page.module.css';
 interface blogData {
 	content: string;
 	date_posted: string;
@@ -37,12 +38,14 @@ function BlogPost({ post }: InferGetStaticPropsType<typeof getStaticProps>) {
 			</Head>
 			<main className={styles.container}>
 				<Header />
-				<div className='main-container blog-post'>
-					<div>
-						<h2>{data.title}</h2>
-						<p>{data.date_posted.split('T')[0]}</p>
+				<div className={blog_styles.wrapper}>
+					<div className={`${blog_styles.container} main-container`}>
+						<div>
+							<h2>{data.title}</h2>
+							<p>{data.date_posted.split('T')[0]}</p>
+						</div>
+						<ReactMarkdown>{data.content}</ReactMarkdown>
 					</div>
-					<ReactMarkdown>{data.content}</ReactMarkdown>
 				</div>
 				<Footer />
 			</main>
