@@ -1,0 +1,28 @@
+.container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > div > :nth-child(2) {
+    align-self: flex-start;
+    font-style: italic;
+    min-width: max-content;
+
+}
+
+
+@media only screen and (max-width: 828px) {
+    .container > h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .container > h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .container {
+        font-size: 1rem;
+    }
+}
