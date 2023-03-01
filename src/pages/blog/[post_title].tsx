@@ -4,15 +4,17 @@ import getPostData from '@/components/data/getPostData';
 
 
 function BlogPost( {post}: any) {
-	console.log(post);
+	console.log(post[0].date_posted);
+	const data = post[0];
+
 
 	return ( 
 		<div className='main-container blog-post'>
 			<div>
-				<h2>{post.title}</h2>
-				<p>{post.date_posted.split('T')[0]}</p>
+				<h2>{data.title}</h2>
+				<p>{data.date_posted.split('T')[0]}</p>
 			</div>
-			<ReactMarkdown>{post.content}</ReactMarkdown>
+			<ReactMarkdown>{data.content}</ReactMarkdown>
 		</div>
 	);
 }
@@ -24,10 +26,10 @@ export async function getStaticPaths() {
 	}
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: any) {
 	const { params } = context;
-    console.log(params)
-    const post = await getPostData(params)
+    const post = await getPostData(params.post_title)
+	//console.log(post)
 
 	return {
 		props: {
