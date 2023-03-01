@@ -21,7 +21,6 @@ interface blogData {
 export default function BlogPage({
 	data,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-	console.log(data);
 	return (
 		<>
 			<Head>

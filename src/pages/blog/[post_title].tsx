@@ -1,5 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import getPostData from '@/components/data/getPostData';
+import getPostIDList from '@/components/data/getPostIDList';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import Head from 'next/head';
 import Header from '@/components/header';
@@ -50,11 +51,15 @@ function BlogPost({ post }: InferGetStaticPropsType<typeof getStaticProps>) {
 }
 
 export async function getStaticPaths() {
+	const data = await getPostIDList();
+	console.log(data);
+
+	const paths = data.map((post: { post_id: string }) => {
+		return { params: { post_title: `${post.post_id}` } };
+	});
+
 	return {
-		paths: [
-			{ params: { post_title: 'the-site-is-live' } },
-			{ params: { post_title: 'test_43' } },
-		],
+		paths,
 		fallback: false,
 	};
 }
