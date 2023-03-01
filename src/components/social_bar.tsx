@@ -27,7 +27,7 @@ function SocialBar() {
 
 			<a href='https://twitter.com/chartley1988'>
 				<Image
-					src='icons/twitter_blue.svg'
+					src='/icons/twitter_blue.svg'
 					alt='Twitter Logo'
 					width={32}
 					height={32}
