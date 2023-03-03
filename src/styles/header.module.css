@@ -7,23 +7,23 @@
 
     font-family: 'Tangerine';
     font-weight: 400;
-    text-align: center;
     user-select: none;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
 }
 
 .container > h1 {
     text-shadow: 5px 3px 0px rgb(0, 0, 0);
 }
 
-.social {
-    position: absolute;
-    right: 10px;
-    top: 0px;
-}
-
 
 @media only screen and (max-width: 1100px) {
-    .container > h1 {
+    .title > h1 {
         font-size: 3rem;
         text-align: left;
         text-shadow: 2px 3px 0px rgb(0, 0, 0);
@@ -31,18 +31,21 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
+    .title {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
         font-size: 2rem;
 
     }
 
-    .container > h1 {
+    .title > h1 {
         font-size: 2.5rem;
         text-shadow: 2px 3px 0px rgb(0, 0, 0);
     }
 
-    .container > .social{
-        visibility: hidden;
+    .title > .social{
+        display: none;
     
     }
 }

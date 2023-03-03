@@ -5,9 +5,11 @@ import NavMenu from './nav_menu';
 function Header() {
 	return (
 		<div className={styles.container}>
-			<h1>Chartley Designs</h1>
-			<div className={styles.social}>
-				<SocialBar />
+			<div className={styles.title}>
+				<h1>Chartley Designs</h1>
+				<div className={styles.social}>
+					<SocialBar />
+				</div>
 			</div>
 			<NavMenu />
 		</div>

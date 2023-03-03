@@ -1,5 +1,5 @@
 import styles from '../styles/projects.module.css'
-import projects_data from './data/projects_data';
+import projects_data from './data/projects_data'; 
 import Image from 'next/image';
 
 const iterate = (obj: any) => {
@@ -19,7 +19,8 @@ const listProjects = projectArray.map((project: any) => (
 		<div className={styles.header}>
 			<h3>{project.title}</h3>
 			<div>
-				<a href={project.github_url}>
+				<a href={project.github_url} className={styles.github}>
+					<p>Github Repo</p>
 					<Image
 						src="/icons/github-mark.svg"
 						alt='GitHub Logo'
@@ -48,8 +49,10 @@ const listProjects = projectArray.map((project: any) => (
 function Projects() {
 	return (
 		<div className={styles.projects}>
+			<br />
 			<h2>Projects</h2>
 			<ul>{listProjects}</ul>
+			<br />
 		</div>
 	);
 }
