@@ -21,7 +21,7 @@ const Data: Object[] = [
 	{
 		title: 'Chartley Designs',
 		description:
-			'This website is also a current project! Built with react using vite. This is really my first major foray into react. Uses react router to handle routing and URLs. The blog is powered by Sanity CMS as a backend. This website is also my first time using a CMS.',
+			'This website is also a current project! Built with react using NextJS. This is really my first major foray into react. The blog is powered by Sanity CMS as a backend. This website is also my first time using a CMS.',
 		image_src: "/images/chartleys_website_screenshot.jpg",
 		live_url: 'https://chartley1988.github.io/chartley-website/',
 		github_url: 'https://github.com/chartley1988/chartley-website',
