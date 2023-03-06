@@ -47,6 +47,11 @@ a {
 	text-decoration: none;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
 .main-container {
 	width: var(--desktop-width);
 	padding: 1rem 2rem 1rem 2rem;
