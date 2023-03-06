@@ -1,56 +1,53 @@
 .container {
-    position: relative;
-    background-color:var(--color-background-accent);
-    color: var(--color-accent-light);
-    z-index: 3;
-    width: 100%;
+	position: relative;
+	background-image: url('/images/dark-mosaic.png'),
+		linear-gradient(180deg, var(--color-background-accent) 0%, rgba(0, 0, 0, 0.483) 100%);
+	background-repeat: repeat, no-repeat;
+	color: var(--color-accent-light);
+	z-index: 3;
+	width: 100%;
 
-    font-family: 'Tangerine';
-    font-weight: 400;
-    user-select: none;
+	font-family: 'Tangerine';
+	font-weight: 400;
+	user-select: none;
 }
 
 .title {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    gap: 1rem;
-    align-items: center;
-    padding: 0 1rem 0 1rem;
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	gap: 1rem;
+	align-items: center;
+	padding: 0 1rem 0 1rem;
 }
 
 .title > h1 {
-    justify-self: start;
-    text-shadow: 5px 3px 0px rgb(0, 0, 0);
+	justify-self: start;
 }
 
 .title > .social {
-    justify-self: end;
+	justify-self: end;
 }
 
-
 @media only screen and (max-width: 1100px) {
-    .title > h1 {
-        font-size: 3rem;
-        text-align: left;
-        text-shadow: 2px 3px 0px rgb(0, 0, 0);
-    }
+	.title > h1 {
+		font-size: 3rem;
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .title {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        font-size: 2rem;
+	.title {
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+		font-size: 2rem;
+	}
 
-    }
+	.title > h1 {
+		font-size: 2.5rem;
+	}
 
-    .title > h1 {
-        font-size: 2.5rem;
-        text-shadow: 2px 3px 0px rgb(0, 0, 0);
-    }
-
-    .title > .social{
-        display: none;
-    }
+	.title > .social {
+		display: none;
+	}
 }

@@ -24,7 +24,7 @@ function AboutMe() {
 					className='main-container'
 					src='/images/about_me_photo.jpg'
 					alt='Photo of Me'
-					width={600}
+					width={800}
 					height={600}
 				></Image>
 			</div>
