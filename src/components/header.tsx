@@ -19,7 +19,6 @@ function Header() {
 
 	return (
 		<div className={styles.container}>
-			<MobileNavMenu mobileNavOpen={mobileNavOpen} />
 			<div className={styles.title}>
 				<Image
 					src='/icons/chart_logo.svg'
@@ -36,6 +35,7 @@ function Header() {
 					showMobileNav={showMobileNav}
 				/>
 			</div>
+			<MobileNavMenu mobileNavOpen={mobileNavOpen} />
 			<NavMenu />
 		</div>
 	);
