@@ -17,6 +17,15 @@ function SocialBar() {
 				</svg>
 			</a>
 
+			<a href='https://www.linkedin.com/in/carson-hartley-00930b269/'>
+				<Image
+					src='/icons/linkedin-logo.svg'
+					alt='linkedin Logo'
+					width={32}
+					height={32}
+				></Image>
+			</a>
+
 			<a href='https://github.com/chartley1988'>
 				<Image
 					src='/icons/github-mark-white.svg'
