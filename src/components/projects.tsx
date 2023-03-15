@@ -2,6 +2,7 @@ import styles from '../styles/projects.module.css'
 import projects_data from './data/projects_data'; 
 import Image from 'next/image';
 
+// Returns an array of objects from a parent object. Used to read dictionary of projects from data file.
 const iterate = (obj: any) => {
 	const objectArray: Object[] = [];
 	Object.keys(obj).forEach((key) => {

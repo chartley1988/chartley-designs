@@ -2,7 +2,11 @@ import styles from '../styles/mobile_nav_menu.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
-function MobileNavMenu( {mobileNavOpen}: any ) {
+type AppProps = {
+	mobileNavOpen: boolean
+};
+
+function MobileNavMenu( {mobileNavOpen}: AppProps ) {
 	
 
 	return (
