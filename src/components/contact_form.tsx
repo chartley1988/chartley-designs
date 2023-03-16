@@ -12,14 +12,19 @@ export default function ContactForm() {
 					data-netlify='true'
 					className={style.contact}
 				>
-					<input type="hidden" name="form-name" value="contact" />
+					<input type='hidden' name='form-name' value='contact' />
+					<input
+						type='hidden'
+						name='subject'
+						value='Contact Form submission from carsonhartley.com'
+					/>
 					<div className={style['user-info']}>
 						<label htmlFor='name'>*Name</label>
 						<input
 							className={style.form}
 							name='name'
 							type='text'
-							placeholder='Carson Hartley'
+							placeholder='Enter name here'
 							required
 							id='username'
 						/>
