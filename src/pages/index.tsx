@@ -3,6 +3,7 @@ import styles from '../styles/home.module.css';
 import Projects from '../components/projects';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ContactForm from '@/components/contact_form';
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 			<main className={styles.container}>
 				<Header />
 				<Projects />
+				<ContactForm />
 				<Footer />
 			</main>
 		</>
