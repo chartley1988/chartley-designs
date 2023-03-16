@@ -44,11 +44,27 @@ input.form {
 }
 
 textarea.contact {
+	grid-column: span 1;
 	box-sizing: border-box;
     resize: none;
+	min-width: 250px;
 	width: 100%;
 	height: 250px;
 	padding: 0.25rem;
 	font-size: 1.25rem;
 	font-family: 'Spectral', serif;
+}
+
+.submit-button {
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	background-color: var(--color-background-accent);
+    color: var(--color-accent-light);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    align-self: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
 }

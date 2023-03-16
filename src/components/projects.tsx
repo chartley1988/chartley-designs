@@ -1,5 +1,5 @@
-import styles from '../styles/projects.module.css'
-import projects_data from './data/projects_data'; 
+import styles from '../styles/projects.module.css';
+import projects_data from './data/projects_data';
 import Image from 'next/image';
 
 // Returns an array of objects from a parent object. Used to read dictionary of projects from data file.
@@ -20,29 +20,32 @@ const listProjects = projectArray.map((project: any) => (
 		<div className={styles.header}>
 			<h3>{project.title}</h3>
 			<div>
-				<a href={project.github_url} className={styles.github}>
-					<p>Github Repo</p>
-					<Image
-						src="/icons/github-mark.svg"
-						alt='GitHub Logo'
-						width={32}
-						height={32}
-						color="var(--font)"
-					/>
-				</a>
+				{project.github_url && (
+					// If no github url is provided, no link will render
+					<a href={project.github_url} className={styles.github}>
+						<p>Github Repo</p>
+						<Image
+							src='/icons/github-mark.svg'
+							alt='GitHub Logo'
+							width={32}
+							height={32}
+							color='var(--font)'
+						/>
+					</a>
+				)}
 			</div>
 		</div>
-			<p>{project.description}</p>
-			<Image
-				src={project.image_src}
-				alt='Project Screenshot'
-				width={1440}
-				height={900}
-				style={{
-					width: '100%',
-					height: 'auto',
-				}}
-			/>
+		<p>{project.description}</p>
+		<Image
+			src={project.image_src}
+			alt='Project Screenshot'
+			width={1440}
+			height={900}
+			style={{
+				width: '100%',
+				height: 'auto',
+			}}
+		/>
 		<a href={project.live_url}>Check it out!</a>
 	</li>
 ));
