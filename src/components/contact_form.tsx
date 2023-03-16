@@ -6,7 +6,8 @@ export default function ContactForm() {
 			<div className={`main-container`}>
 				<h2 className={style.contact}>Get in touch!</h2>
 				<form
-					action='POST'
+					method='POST'
+					action='/form-success'
 					name='contact'
 					data-netlify='true'
 					className={style.contact}
@@ -20,6 +21,7 @@ export default function ContactForm() {
 							type='text'
 							placeholder='Carson Hartley'
 							required
+							id='username'
 						/>
 
 						<label htmlFor='email'>*Email</label>
@@ -29,6 +31,7 @@ export default function ContactForm() {
 							type='email'
 							placeholder='example@gmail.com'
 							required
+							id='useremail'
 						/>
 					</div>
 					<textarea
@@ -36,6 +39,7 @@ export default function ContactForm() {
 						className={style.contact}
 						required
 						placeholder='Type your message here!'
+						id='usermessage'
 					></textarea>
 					<button
 						type='submit'
