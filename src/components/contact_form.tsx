@@ -11,6 +11,7 @@ export default function ContactForm() {
 					data-netlify='true'
 					className={style.contact}
 				>
+					<input type="hidden" name="form-name" value="contact" />
 					<div className={style['user-info']}>
 						<label htmlFor='name'>*Name</label>
 						<input
