@@ -50,10 +50,8 @@ const listProjects = projectArray.map((project: any) => (
 function Projects() {
 	return (
 		<div className={styles.projects}>
-			<br />
 			<h2>Projects</h2>
 			<ul>{listProjects}</ul>
-			<br />
 		</div>
 	);
 }

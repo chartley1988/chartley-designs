@@ -1,14 +1,16 @@
 .projects {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 3rem;
 	align-items: center;
 }
 
 .projects > ul {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 	list-style: none;
 }
 
@@ -35,7 +37,6 @@
 }
 
 .project {
-	max-width: 900px;
 	padding: 1rem;
 	background-color: white;
 	border-radius: 15px;
@@ -62,6 +63,7 @@
 .projects > ul {
 	display: flex;
 	align-items: center;
+	gap: 3rem;
 }
 
 .github {
