@@ -21,7 +21,7 @@ export default function Home() {
 			</Head>
 			<main className={styles.container}>
 				<Header />
-				<p className='main-container'>Success! Your message has been sent.</p>
+				<p className={`${styles.success} main-container`}>Success! Your message has been sent.</p>
 				<Footer />
 			</main>
 		</>
