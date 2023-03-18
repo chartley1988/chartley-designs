@@ -12,7 +12,7 @@ function NavMenu() {
 					<Link href='/blog'>Blog</Link>
 				</li>
 				<li>
-					<Link href='/about-me'>About Me</Link>
+					<Link href='/about_me'>About Me</Link>
 				</li>
 			</ul>
 		</div>
