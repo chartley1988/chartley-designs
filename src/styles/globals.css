@@ -2,9 +2,10 @@
 	--color-background-accent: #3a3952;
 	--color-accent-light: #bce784;
 	--desktop-width: 960px;
-	--font-color: black;
+	--font-color: rgb(60, 60, 60);
 
 	font-size: 100%;
+	color: var(--font-color);
 	font-family: 'Spectral', serif;
 	box-sizing: border-box;
 }
@@ -38,9 +39,15 @@ h3 {
 	font-size: 1.563rem;
 }
 
+h4 {
+	font-size: 1.3rem;
+	color: rgb(83, 83, 83);
+}
+
 p {
 	font-size: 1.25rem;
 	line-height: 2rem;
+	letter-spacing: -0.2px;
 }
 
 a {

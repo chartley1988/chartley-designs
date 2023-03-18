@@ -35,6 +35,14 @@ const listProjects = projectArray.map((project: any) => (
 				)}
 			</div>
 		</div>
+		<div>
+			<h4>Stack:</h4>
+			<ul className={styles['tech-stack']}>
+				{project.stack.map((item: string) => (
+					<li key={item}>{item}</li>
+				))}
+			</ul>
+		</div>
 		<p>{project.description}</p>
 		<Image
 			src={project.image_src}
