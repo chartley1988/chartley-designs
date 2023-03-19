@@ -19,7 +19,7 @@ function MobileNavMenu( {mobileNavOpen}: AppProps ) {
 					<Link href='/blog'>Blog</Link>
 				</li>
 				<li>
-					<Link href='/about_me'>About Me</Link>
+					<Link href='/about-me'>About Me</Link>
 				</li>
 			</ul>
 		</div>
