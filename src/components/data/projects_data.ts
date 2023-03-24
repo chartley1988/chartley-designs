@@ -4,7 +4,7 @@ const Data: Object[] = [
 		title: 'Summit Calculator',
 		stack: ['React', 'Vite'],
 		description:
-			"A line based calculator where very line is its own calculator. The result is generated as you type a formula. It is smart enough to know what's math and what isn't, so go ahead and make some notes with your equations. One line can also reference another, so you can build complex sequences of calculations very easily. In the future, I plan to add support for saving multiple sheets, namable variables, and some other features. Did I mention there's a dark mode??",
+			"A line based calculator where every line is its own calculator. The result is generated as you type a formula. It is smart enough to know what's math and what isn't, so go ahead and make some notes with your equations. One line can also reference another, so you can build complex sequences of calculations very easily. In the future, I plan to add support for saving multiple sheets, namable variables, and some other features. Did I mention there's a dark mode??",
 		image_src: "/images/stacked-calculator.jpg",
 		live_url: 'https://chartley1988.github.io/chartleys-calculator/',
 		github_url: 'https://github.com/chartley1988/chartleys-calculator',
