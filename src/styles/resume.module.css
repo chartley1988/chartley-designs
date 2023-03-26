@@ -123,3 +123,45 @@ p.content {
 .content-child {
     padding: 0.75rem;
 }
+
+@media only screen and (max-width: 1000px) {
+	.container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-bar {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem 1rem 1rem;
+    
+        display: flex;
+        flex-direction: column;
+    
+        background-color: var(--color-background-accent);
+        color: var(--color-accent-light);
+    }
+
+    img.photo {
+        border-radius: 20%;
+        width: 40%;
+        height: auto;
+        align-self: center;
+    }
+
+    h2.badge {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p.badge {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    a.contact {
+        text-align: center;
+        justify-content: center;
+    }
+}
