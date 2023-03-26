@@ -3,6 +3,7 @@ import styles from '@/styles/home.module.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import AboutMe from '@/components/page_content/about_me';
+import Link from 'next/link';
 
 
 export default function Home() {

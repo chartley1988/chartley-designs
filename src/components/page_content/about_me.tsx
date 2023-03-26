@@ -1,5 +1,7 @@
 import styles from '../../styles/about_me.module.css'
 import Image from 'next/image';
+import ContactForm from '../contact_form';
+import Link from 'next/link';
 
 function AboutMe() {
 	return (
@@ -20,6 +22,19 @@ function AboutMe() {
 						to use and look the part. Check out the main page for some examples of stuff I&apos;ve been working on!
 					</p>
 				</section>
+
+				<section className='main-container'>
+				<h2>Contact Me</h2>
+				<p>Feel free to email me at <a href="chartley1988@gmail.com">chartley1988@gmail.com</a> or shoot me a message on the form below.</p>
+				<ContactForm />
+
+				<h2>Resume</h2>
+				<Link href={`/resume`}>Web Version</Link>
+				<br />
+				<Link href={`/documents/text_resume.pdf`}>PDF Version</Link>
+
+				</section>
+
 				<Image
 					className='main-container'
 					src='/images/about_me_photo.jpg'
