@@ -7,6 +7,7 @@ function AboutMe() {
 	return (
 		<>
 			<div className={`${styles.container} main`}>
+				<h2>About Me</h2>
 				<section className='main-container'>
 					<p>
 						Hello! My name is Carson Hartley. I am a web developer
@@ -24,14 +25,15 @@ function AboutMe() {
 				</section>
 
 				<section className='main-container'>
-				<h2>Contact Me</h2>
+				<h3>Contact Me</h3>
 				<p>Feel free to email me at <a href="chartley1988@gmail.com">chartley1988@gmail.com</a> or shoot me a message on the form below.</p>
 				<ContactForm />
 
-				<h2>Resume</h2>
+				<h3>Resume</h3>
 				<Link href={`/resume`}>Web Version</Link>
 				<br />
 				<Link href={`/documents/text_resume.pdf`}>PDF Version</Link>
+				<br /><br />
 
 				</section>
 

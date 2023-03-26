@@ -33,6 +33,7 @@ function Header() {
 				<DropdownIcon
 					classname={styles.mobile}
 					showMobileNav={showMobileNav}
+					mobileNavOpen = {mobileNavOpen}
 				/>
 			</div>
 			<MobileNavMenu mobileNavOpen={mobileNavOpen} />
