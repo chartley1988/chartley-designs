@@ -111,7 +111,7 @@ function Skills() {
 						<Skill
 							text='CSS'
 							image={{
-								src: '/icons/skills/CSS_Logo.svg',
+								src: '/icons/skills/CSS_logo.svg',
 								alt: 'CSS Logo',
 							}}
 						/>
@@ -151,7 +151,7 @@ function Skills() {
 						<Skill
 							text='Next.JS'
 							image={{
-								src: '/icons/skills/Next_Logo.svg',
+								src: '/icons/skills/NEXT_Logo.svg',
 								alt: 'Next.JS Logo',
 							}}
 						/>
