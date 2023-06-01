@@ -27,15 +27,18 @@ function AboutMe() {
 				<section className='main-container'>
 				<h3>Contact Me</h3>
 				<p>Feel free to email me at <a href="chartley1988@gmail.com">chartley1988@gmail.com</a> or shoot me a message on the form below.</p>
-				<ContactForm />
+
+				<br />
 
 				<h3>Resume</h3>
-				<Link href={`/resume`}>Web Version</Link>
+				<Link href={`/resume`} target="_blank">Web Version</Link>
 				<br />
-				<Link href={`/documents/text_resume.pdf`}>PDF Version</Link>
+				<Link href={`/documents/text_resume.pdf`} target="_blank">PDF Version</Link>
 				<br /><br />
 
 				</section>
+
+				<ContactForm />
 
 				<Image
 					className='main-container'

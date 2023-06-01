@@ -255,6 +255,17 @@ function Projects() {
 			<p className={styles.fonts}>
 				<strong>Tech Used</strong>: React, Next.JS, Sanity CMS
 			</p>
+
+			<br />
+
+			<h3 className={styles.fonts}>Old Growth - A Godot Game</h3>
+			<p className={styles.fonts}>
+				A game made with Godot Game Engine. Scripted using GD Script. Included completely custom made graphics and assets. Included logic for planting trees that grew according to their own individual stats such as accumulated sunshine. The goal of the game is to restore a ruined forest.
+			</p>
+			<br />
+			<p className={styles.fonts}>
+				<strong>Tech Used</strong>: React, Next.JS, Sanity CMS
+			</p>
 		</div>
 	);
 }
