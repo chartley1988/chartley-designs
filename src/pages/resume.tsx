@@ -264,7 +264,7 @@ function Projects() {
 			</p>
 			<br />
 			<p className={styles.fonts}>
-				<strong>Tech Used</strong>: React, Next.JS, Sanity CMS
+				<strong>Tech Used</strong>: Godot, GD Script, Aseprite for pixel art
 			</p>
 		</div>
 	);
