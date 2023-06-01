@@ -54,7 +54,7 @@ const listProjects = projectArray.map((project: any) => (
 				height: 'auto',
 			}}
 		/>
-		<a href={project.live_url}>Check it out!</a>
+		<a href={project.live_url} target="_blank">Check it out!</a>
 	</li>
 ));
 

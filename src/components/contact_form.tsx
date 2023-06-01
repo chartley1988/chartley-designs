@@ -4,7 +4,7 @@ export default function ContactForm() {
 	return (
 		<div className={style.wrapper}>
 			<div className={`main-container`}>
-				<h2 className={style.contact}>Get in touch!</h2>
+				<h3 className={style.contact}>Get in touch!</h3>
 				<form
 					method='POST'
 					action='/form-success'

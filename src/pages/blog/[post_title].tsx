@@ -45,6 +45,7 @@ function BlogPost({ post }: InferGetStaticPropsType<typeof getStaticProps>) {
 							<p>{data.date_posted.split('T')[0]}</p>
 						</div>
 						<ReactMarkdown>{data.content}</ReactMarkdown>
+						<em>Chartley</em>
 					</div>
 				</div>
 				<Footer />

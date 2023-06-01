@@ -23,7 +23,10 @@
     align-self: flex-start;
     font-style: italic;
     min-width: max-content;
+}
 
+.container:last-child {
+    font-size: 1.3rem;
 }
 
 
